@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+html {
+    margin: 10% 6.3% 10% 6.3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    background-color: #31343D;
+    color: #F3EFF5;
+}
+
+footer .email a {
+    color: #F3EFF5;
+    text-decoration: none;
+}
+
+#contacts_label {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#mapid { height: 180px; }
+
+footer .interaction-with-email {
+    background-color: #ffffff;
+    border: 0;
+    padding: 0px 5px 0px 5px;
+    border-radius: 25px;
+    color: #252a34;
+    cursor: pointer;
+    font-weight: 900;
+    height: 18px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    padding: 0px;
+    text-transform: uppercase;
+    width: auto;
+}
+
+  .popover__content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -150px;
+    transform: translate(0, 10px);
+    background-color: #bfbfbf;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: auto;
+  }
+  .popover__content:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: calc(50% - 10px);
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #bfbfbf transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  footer button:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  }
+  .popover__message {
+    text-align: center;
+  }
+  
