@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-
 html {
     margin: 10% 6.3% 10% 6.3%;
     font-family: 'Montserrat', sans-serif;
@@ -11,10 +10,7 @@ footer {
     color: #F3EFF5;
 }
 
-footer .email a {
-    color: #F3EFF5;
-    text-decoration: none;
-}
+
 
 #contacts_label {
     font-size: 24px;
@@ -23,20 +19,38 @@ footer .email a {
 
 #mapid { height: 180px; }
 
-footer .interaction-with-email {
+footer .email-wrapper {
+    position: relative;
+}
+
+footer .email {
+    display: inline-block;
+}
+
+footer .email a {
+    color: #F3EFF5;
+}
+
+footer .interaction-with-email-address {
+    display: inline-block;
+    position: relative;
+    text-align: center;
     background-color: #ffffff;
     border: 0;
-    padding: 0px 5px 0px 5px;
     border-radius: 25px;
     color: #252a34;
     cursor: pointer;
     font-weight: 900;
+    justify-items: center;
+    justify-self: center;
     height: 18px;
-    padding-bottom: 5px;
+    font-size: 18px;
     overflow: hidden;
-    padding: 0px;
-    text-transform: uppercase;
-    width: auto;
+    width: 64px;
+}
+
+footer .interaction-with-email-address span {
+    transform: translateY(-50%);
 }
 
   .popover__content {
